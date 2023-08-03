@@ -11,6 +11,7 @@ namespace Cupboard
             services.AddSingleton<IResourceProvider, WindowsFeatureProvider>();
             services.AddSingleton<IResourceProvider, RegistryValueProvider>();
             services.AddSingleton<IResourceProvider, WingetPackageProvider>();
+            services.AddSingleton<IResourceProvider, CertificateProvider>();
 
 #pragma warning disable CS0618 // Type or member is obsolete
             services.AddSingleton<IResourceProvider, RegistryKeyProvider>();
